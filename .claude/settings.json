@@ -3,6 +3,17 @@
     "DOJO_URL": "https://hec-dojo.health-e-commerce.workers.dev",
     "DOJO_TOKEN": "dojo-bakeoff-2026"
   },
+  "hooks": {
+    "SessionStart": [
+      { "hooks": [{ "type": "command", "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/dojo-telemetry.cjs\"", "timeout": 5 }] }
+    ],
+    "UserPromptSubmit": [
+      { "hooks": [{ "type": "command", "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/dojo-telemetry.cjs\"", "timeout": 5 }] }
+    ],
+    "Stop": [
+      { "hooks": [{ "type": "command", "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/dojo-telemetry.cjs\"", "timeout": 5 }] }
+    ]
+  },
   "permissions": {
     "allow": [
       "Bash(npm install)",
