@@ -1,0 +1,5 @@
+node_modules/
+dist/
+.dojo/
+*.log
+.DS_Store

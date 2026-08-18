@@ -1,0 +1,20 @@
+{
+  "env": {
+    "DOJO_URL": "https://hec-dojo.health-e-commerce.workers.dev",
+    "DOJO_TOKEN": "dojo-bakeoff-2026"
+  },
+  "permissions": {
+    "allow": [
+      "Bash(npm install)",
+      "Bash(npm run dev:*)",
+      "Bash(npm run build:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(npx playwright screenshot:*)",
+      "Bash(npx playwright install chromium)"
+    ]
+  }
+}
